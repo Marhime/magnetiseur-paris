@@ -7,6 +7,7 @@ import logout from "app/auth/mutations/logout"
 import logo from "public/logo.png"
 import { useMutation } from "@blitzjs/rpc"
 import { Routes, BlitzPage } from "@blitzjs/next"
+import JSXStyle from "styled-jsx/style"
 
 /*
  * This file is just for a pleasant getting started page for your new app.
@@ -134,7 +135,7 @@ const Home: BlitzPage = () => {
           </a>
         </footer>
 
-        <style jsx global>{`
+        <style>{`
           @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap");
 
           html,
