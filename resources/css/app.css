@@ -1,0 +1,79 @@
+/**
+* Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800;900&family=Source+Sans+Pro:wght@400;500;600;900&display=swap");
+
+/**
+* Tailwind customizations
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+* Custom CSS
+*/
+@layer base {
+    html {
+        font-family: "Source Sans Pro", system-ui, sans-serif;
+    }
+}
+
+.px-container {
+    padding-left: clamp(1rem, 5vw, 3rem);
+    padding-right: clamp(1rem, 5vw, 3rem);
+    max-width: 1536px;
+}
+
+.ease-motion {
+    transition-timing-function: cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.link {
+    overflow: hidden;
+}
+
+.link::after {
+    content: "";
+    width: 100%;
+    bottom: 0.25rem;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    background: currentColor;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0% 50%;
+    transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.link::after {
+    bottom: 0;
+}
+
+.link:hover::after,
+.link.active::after {
+    transform: scale3d(1, 1, 1);
+}
+
+.cursor {
+    position: fixed;
+    z-index: 10;
+    top: -24px;
+    left: -78px;
+    pointer-events: none;
+    will-change: transform;
+    opacity: 0;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+.error-page {
+    min-height: calc(100vh - 76px);
+}
+
+.error-page div {
+    transform: translateY(-76px);
+}
