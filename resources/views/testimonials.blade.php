@@ -21,14 +21,17 @@
         <div class="mt-10 md:mt-14 lg:mt-20 grid md:grid-cols-2 lg:grid-cols-3 border-t">
             @foreach ($testimonials as $testimonial)
                 <div class="flex flex-col border-b md:border-r p-8">
-                    <p class="text-2xl/7 font-semibold">{{ $testimonial->message }}</p>
-                    <div class="whitespace-nowrap mt-6">
+                    <p class="text-2xl/7 font-semibold"><span class="bg-gray-300/50">{{ $testimonial->message }}</span>
+                    </p>
+
+                    <div class="whitespace-nowrap mt-6 flex justify-between items-start">
                         <div>
                             <p class="text-base font-semibold leading-none">{{ $testimonial->first_name }}
                                 {{ $testimonial->last_name ? $testimonial->last_name[0] . '.' : '' }}</p>
                             <p class="mt-1 text-base font-semibold leading-none text-darkGray">
-                                {{ $testimonial->city ? $testimonial->city : 'Paris' }}</p>
+                                {{ $testimonial->location ? $testimonial->location : 'Paris' }}</p>
                         </div>
+                        <p class="text-sm font-semibold">{{ $testimonial->created_at->format('d.m.y') }}</p>
                     </div>
                 </div>
             @endforeach

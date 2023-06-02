@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Events\MessageCreated;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,7 +22,13 @@ class Message extends Model
         'email',
         'phone',
         'message',
-        'published'
+        'published',
+        'location',
+        'created_at',
+    ];
+
+    protected $dispatchesEvents = [
+        'created' => MessageCreated::class,
     ];
 
 }

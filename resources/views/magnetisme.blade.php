@@ -144,7 +144,8 @@
                                 </path>
                                 <path
                                     d="m2.8 8.1 1.9.1 2 .2h5.2M12 8.4c0-.6-.6-.9-1-1.2l-.6-.3-.3-.3-.4-.2-.6-.6-.4-.6-.3-.8M12 8.4c0 .7-.6 1.2-1 1.7l-1.2 1.4-.9.6-.5.5"
-                                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+                                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+                                </path>
                             </svg>
                         </i>
                     </a>
@@ -155,45 +156,38 @@
                     <div>
                         <div class="mb-12 last:mb-0 group"> <span
                                 class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">1</span>
-                            <div class="max-w-xl text-xl xs:text-2xl" style="position: relative;">
+                            <div class="max-w-xl text-xl xs:text-2xl relative">
                                 <h3 class="font-semibold font-serif leading-tight">Le déroulement d'une séance</h3>
                                 <p class="mt-1 leading-tight text-lg text-darkGray">En moyenne, la durée d'une séance
                                     chez un
                                     magnétiseur est très variable. Cela peut aller de quelques minutes à une heure.</p>
-                                <iframe
-                                    style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                                    aria-hidden="true" tabindex="-1" src="about:blank"></iframe>
                             </div>
                         </div>
                         <div class="mb-12 last:mb-0 group"> <span
                                 class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">2</span>
-                            <div class="max-w-xl text-xl xs:text-2xl" style="position: relative;">
+                            <div class="max-w-xl text-xl xs:text-2xl relative">
                                 <h3 class="font-semibold font-serif leading-tight">Établir la connexion et le calme</h3>
                                 <p class="mt-1 leading-tight text-lg text-darkGray">Une fois la prise de contact
                                     établie, le
                                     magnétiseur crée une atmosphère de calme et d'harmonie. Cela permet de préparer le
-                                    terrain pour le travail énergétique à venir.</p><iframe
-                                    style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                                    aria-hidden="true" tabindex="-1" src="about:blank"></iframe>
+                                    terrain pour le travail énergétique à venir.</p>
                             </div>
                         </div>
                         <div class="mb-12 last:mb-0 group"> <span
                                 class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">3</span>
-                            <div class="max-w-xl text-xl xs:text-2xl" style="position: relative;">
+                            <div class="max-w-xl text-xl xs:text-2xl relative">
                                 <h3 class="font-semibold font-serif leading-tight">Débloquer les zones conflictuelles
                                 </h3>
                                 <p class="mt-1 leading-tight text-lg text-darkGray">Le magnétiseur utilise ses mains
                                     pour
                                     harmoniser l'énergie du patient et débloquer les zones de tension et de conflit.
                                     Sans même toucher le corps, il canalise l'énergie pour soulager certains maux et
-                                    rétablir l'équilibre énergétique.</p><iframe
-                                    style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                                    aria-hidden="true" tabindex="-1" src="about:blank"></iframe>
+                                    rétablir l'équilibre énergétique.</p>
                             </div>
                         </div>
                         <div class="mb-12 last:mb-0 group"><span
                                 class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">4</span>
-                            <div class="max-w-xl text-xl xs:text-2xl pb-" style="position: relative;">
+                            <div class="max-w-xl text-xl xs:text-2xl relative"">
                                 <h3 class="font-semibold font-serif leading-tight">
                                     Le ressenti du patient</h3>
                                 <p class="mt-1 leading-tight text-lg text-darkGray">Pendant la séance, le patient, même
@@ -205,9 +199,7 @@
                                     chaleur ou des mouvements internes liés à la régulation sanguine sont courantes lors
                                     de
                                     ces séances.
-                                </p><iframe
-                                    style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                                    aria-hidden="true" tabindex="-1" src="about:blank"></iframe>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -245,6 +237,7 @@
                 </div>
             </div>
         </section>
+
         @include('components.testimonials')
 
     </div>

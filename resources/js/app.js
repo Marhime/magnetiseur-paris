@@ -152,6 +152,30 @@ function init() {
     if (cursor) {
         const cursorFollower = new Cursor(cursor);
     }
+
+    // const readMoreButtons = gsap.utils.toArray("[data-read-more]");
+    // if (readMoreButtons) {
+    //     readMoreButtons.forEach((button) => {
+    //         const parent = button.parentElement;
+    //         const content = parent.querySelector("[data-read-more-content]");
+    //         let contentText;
+    //         if (content.innerText.length > 300) {
+    //             contentText = content.innerText;
+    //             const contentTextCut = contentText.substring(0, 300);
+    //             content.innerHTML = `${contentTextCut}...`;
+    //         }
+    //         button.addEventListener("click", function () {
+    //             content.innerHTML = contentText;
+    //             const tl = gsap.timeline();
+    //             tl.to(content, {
+    //                 duration: 0.5,
+    //                 height: "auto",
+    //                 ease: "power4.inOut",
+    //             });
+    //             this.remove();
+    //         });
+    //     });
+    // }
 }
 
 window.addEventListener("load", init);

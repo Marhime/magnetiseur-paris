@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Enums\MessageType;
 use App\Models\Message;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\Enum;
 use Illuminate\View\View;
+use App\Enums\MessageType;
+use App\Mail\ContactFormMail;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Validation\Rules\Enum;
 
 class MessageController extends Controller
 {
@@ -69,17 +71,22 @@ class MessageController extends Controller
             'last_name' => 'required|string',
             'email' => 'nullable|email',
             'phone' => 'nullable|string|min:10',
-            'message' => 'required|string'
+            'message' => 'required|string',
+            'location' => 'nullable|string',
         ]);
 
         // check if user isAdmin
-        if (auth()->user()->isAdmin() && $request->has('published')) {
-            $validated['published'] = true;
+        if (auth()->user()->isAdmin()) {
+            $validated['published'] = $request->has('published');
+            $validated['created_at'] = $request->created_at;
+        } else {
+            $validated['published'] = false;
+            $validated['created_at'] = now();
         }
 
         Message::create($validated);
 
-        return redirect(route('messages.testimonials'));
+        return redirect(route('messages.testimonials'))->with('success', 'Témoignage créé avec succès.');
     }
 
     /**
@@ -138,11 +145,14 @@ class MessageController extends Controller
             'email' => 'nullable|email',
             'phone' => 'nullable|string|min:10',
             'message' => 'required|string',
+            'location' => 'nullable|string',
             'created_at' => 'required|date',
         ]);
 
         if (auth()->user()->isAdmin()) {
             $validated['published'] = $request->has('published');
+        } else {
+            $validated['published'] = false;
         }
  
         $message->update($validated);
@@ -174,12 +184,26 @@ class MessageController extends Controller
             'last_name' => 'required|string',
             'email' => 'nullable|email',
             'phone' => 'nullable|string|min:10',
-            'message' => 'required|string'
+            'message' => 'required|string',
+            'location' => 'nullable|string',
         ]);
 
         $validated['published'] = false;
+        $validated['created_at'] = now();
 
         Message::create($validated);
+
+        // send email to dominique.joyes@gmail.com
+        $data = [
+            'type' => $validated['type'],
+            'first_name' => $validated['first_name'],
+            'last_name' => $validated['last_name'],
+            'message' => $validated['message'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'],
+        ];
+
+        Mail::to('maxime.joyes@gmail.com')->send(new ContactFormMail($data));
 
         return redirect(route('contact'))->with('success', 'Votre message a bien été envoyé !');
     }
