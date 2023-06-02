@@ -9,7 +9,7 @@
 
 <body>
     <h1>Coucou Papa !</h1>
-    <p>Tu as reçu un nouveau message de contact de la part de {{ $data['name'] }}.</p>
+    <p>Tu as reçu un nouveau message.</p>
     <p>Voici les détails:</p>
     <p>Type: {{ $data['type'] }}</p>
     <p>Nom: {{ $data['first_name'] }} {{ $data['last_name'] }}</p>

@@ -203,7 +203,7 @@ class MessageController extends Controller
             'phone' => $validated['phone'],
         ];
 
-        Mail::to('maxime.joyes@gmail.com')->send(new ContactFormMail($data));
+        Mail::to("maxime.joyes@gmail.com")->send(new ContactFormMail($data));
 
         return redirect(route('contact'))->with('success', 'Votre message a bien été envoyé !');
     }
