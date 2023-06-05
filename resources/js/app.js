@@ -176,6 +176,26 @@ function init() {
     //         });
     //     });
     // }
+
+    const dotElements = gsap.utils.toArray("[data-dot-element]");
+    if (dotElements) {
+        dotElements.forEach((element) => {
+            const dot = element.querySelector("[data-dot]");
+            gsap.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top center",
+                    once: true,
+                    onEnter: () => {
+                        dot.classList.remove("bg-white");
+                        dot.classList.add("text-white");
+                        dot.classList.remove("text-black");
+                        dot.classList.add("bg-black");
+                    },
+                },
+            });
+        });
+    }
 }
 
 window.addEventListener("load", init);

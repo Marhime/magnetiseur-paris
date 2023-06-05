@@ -154,8 +154,9 @@
                     class="relative mt-12 md:mt-20 lg:flex lg:flex-1 lg:justify-end lg:pl-12 lg:border-l lg:border-dashed pb-8 lg:pb-12">
                     <div class="absolute -left-px -top-32 hidden h-32 border-l lg:block"></div>
                     <div>
-                        <div class="mb-12 last:mb-0 group"> <span
-                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">1</span>
+                        <div data-dot-element class="mb-12 last:mb-0">
+                            <span data-dot
+                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion">1</span>
                             <div class="max-w-xl text-xl xs:text-2xl relative">
                                 <h3 class="font-semibold font-serif leading-tight">Le déroulement d'une séance</h3>
                                 <p class="mt-1 leading-tight text-lg text-darkGray">En moyenne, la durée d'une séance
@@ -163,8 +164,8 @@
                                     magnétiseur est très variable. Cela peut aller de quelques minutes à une heure.</p>
                             </div>
                         </div>
-                        <div class="mb-12 last:mb-0 group"> <span
-                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">2</span>
+                        <div data-dot-element class="mb-12 last:mb-0"> <span data-dot
+                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion">2</span>
                             <div class="max-w-xl text-xl xs:text-2xl relative">
                                 <h3 class="font-semibold font-serif leading-tight">Établir la connexion et le calme</h3>
                                 <p class="mt-1 leading-tight text-lg text-darkGray">Une fois la prise de contact
@@ -173,8 +174,8 @@
                                     terrain pour le travail énergétique à venir.</p>
                             </div>
                         </div>
-                        <div class="mb-12 last:mb-0 group"> <span
-                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">3</span>
+                        <div data-dot-element class="mb-12 last:mb-0"> <span data-dot
+                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion">3</span>
                             <div class="max-w-xl text-xl xs:text-2xl relative">
                                 <h3 class="font-semibold font-serif leading-tight">Débloquer les zones conflictuelles
                                 </h3>
@@ -185,8 +186,8 @@
                                     rétablir l'équilibre énergétique.</p>
                             </div>
                         </div>
-                        <div class="mb-12 last:mb-0 group"><span
-                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion group-hover:text-white group-hover:bg-black">4</span>
+                        <div data-dot-element class="mb-12 last:mb-0"><span data-dot
+                                class="mb-4 flex h-8 w-8 items-center justify-center rounded-full border bg-white text-sm tabular-nums lg:absolute lg:-left-4 font-semibold transition ease-motion">4</span>
                             <div class="max-w-xl text-xl xs:text-2xl relative"">
                                 <h3 class="font-semibold font-serif leading-tight">
                                     Le ressenti du patient</h3>
