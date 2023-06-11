@@ -40,6 +40,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    {{-- rel canonical --}}
+    <link rel="canonical" href="{{ str_replace('http', 'https', request()->url()) }}">
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

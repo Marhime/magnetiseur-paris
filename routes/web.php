@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Models\Message;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessageController;
@@ -114,6 +115,10 @@ Route::get('/admin/questions', [MessageController::class, 'questions'])
     ->middleware(['auth', 'verified'])->name('messages.questions');
 Route::get('/admin/autre', [MessageController::class, 'others'])
     ->middleware(['auth', 'verified'])->name('messages.others');
+
+// blog routes
+// Route::resource('blog', BlogController::class)
+//     ->only(['index', 'store']);
 
 
 Route::middleware('auth')->group(function () {
