@@ -28,10 +28,9 @@
                         <div>
                             <p class="text-base font-semibold leading-none">{{ $testimonial->first_name }}
                                 {{ $testimonial->last_name ? $testimonial->last_name[0] . '.' : '' }}</p>
-                            <p class="mt-1 text-base font-semibold leading-none text-darkGray">
-                                {{ $testimonial->location ? $testimonial->location : 'Paris' }}</p>
                         </div>
-                        <p class="text-sm font-semibold">{{ $testimonial->created_at->format('d.m.y') }}</p>
+                        <p class="text-sm font-semibold leading-none text-darkGray">
+                            {{ $testimonial->location ? $testimonial->location : 'Paris' }}</p>
                     </div>
                 </div>
             @endforeach
