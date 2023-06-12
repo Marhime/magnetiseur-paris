@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#ffffff">
 
     {{-- rel canonical --}}
-    <link rel="canonical" href="{{ str_replace('http', 'https', request()->url()) }}">
+    <link rel="canonical" href="{{ request()->url() }}">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
