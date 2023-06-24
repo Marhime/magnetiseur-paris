@@ -72,7 +72,7 @@
                             <div class="whitespace-nowrap mt-6">
 
                                 <div>
-                                    <p class="text-base font-semibold leading-none">Laura B</p>
+                                    <p class="text-base font-semibold leading-none">Laura B.</p>
                                     <p class="mt-1 text-base font-semibold leading-none text-darkGray">
                                         Paris</p>
                                 </div>
@@ -223,7 +223,7 @@
                                 mieux dans ma peau. Je te remercie encore énormément Dominique.”</span></p>
                         <div class="whitespace-nowrap mt-6">
                             <div>
-                                <p class="text-base font-semibold leading-none">Laura B</p>
+                                <p class="text-base font-semibold leading-none">Laura B.</p>
                                 <p class="mt-1 text-base font-semibold leading-none text-darkGray">
                                     Paris</p>
                             </div>
