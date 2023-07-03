@@ -8,8 +8,9 @@
                     <p>Me laisser un témoignage, me poser une question ou autre.</p>
                     <p>Envoyez moi un message via le formulaire, je vous répondrai dans les plus brefs délais.</p>
                     <div class="font-semibold mt-6">
-                        <p class="">Pour toute demande de rendez-vous, merci de me contacter par téléphone.
-                        </p>
+                        <p class="">Pour toute demande de rendez-vous et/ou de renseignements, merci de contacter
+                            mon
+                            assistante par téléphone au numéro ci-dessous.</p>
                         <a href="tel:+33616660136"
                             class="group relative inline-flex items-center justify-center gap-3 overflow-hidden whitespace-nowrap text-md font-semibold leading-none outline-none transition-all ring-black/30 hover:ring-4 focus-visible:ring-4 active:scale-[0.98] active:ring-2 disabled:pointer-events-none disabled:opacity-60 text-white bg-black border-border hover:border-border-active focus-visible:border-border-active active:border-border-active border h-11 rounded-md px-5 mt-6">
                             <svg class="block w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
