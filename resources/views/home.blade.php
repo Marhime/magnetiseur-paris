@@ -3,7 +3,7 @@
         <h1 data-title
             class="mt-10 text-5xl lg:text-8xl font-serif font-bold md:mt-14 lg:mt-20 invisible will-change-transform">
             Dominique
-            Joyes.<br>Ce <span class="text-darkGray">fameux</span><br>magnétiseur<br>guérisseur.
+            Joyes.<br>magnétiseur<br>guérisseur<br><span class="text-darkGray">reconnu</span>.
         </h1>
     </div>
     <div data-content class="transition-all duration-700 ease-motion translate-y-10 opacity-0 will-change-transform">

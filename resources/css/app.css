@@ -77,3 +77,18 @@
 .error-page div {
     transform: translateY(-76px);
 }
+
+.address-wrapper::before {
+    content: "";
+    background-color: white;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    display: block;
+    transform: translateX(-50%);
+    z-index: 20;
+    cursor: none;
+    pointer-events: none;
+}

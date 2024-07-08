@@ -4,7 +4,7 @@
     </div>
     <div class="mt-4 md:mt-6 lg:mt-8">
         <div class="border-b py-12 transition-colors first:border-t">
-            <div class="px-container mx-auto lg:flex lg:gap-10">
+            <div class="px-container mx-auto lg:flex lg:gap-10 address-wrapper relative">
                 <a href="https://goo.gl/maps/xgcyhcLjNgvTCFt79" target="_blank" data-map-element
                     class="block relative h-full flex-1 cursor-none group overflow-hidden">
                     <div
@@ -79,9 +79,12 @@
                 </svg>
             </div>
             <p data-footer-title class="text-2xl mt-10 lg:mt-32 font-bold md:block max-w-lg invisible">Dominique Joyes
-                ce fameux
-                <span class="text-lightGray">magnétiseur guérisseur</span> qui vous reçoit dans ses cabinets à Paris et
-                en Ardèche.
+                vous reçoit dans ses cabinets à Paris et en Ardèche.<br>
+                <span class="text-lightGray">Uniquement sur rendez-vous.</span>
+                <br>
+                <a href="tel:+33616660136">
+                    ☎️ 06 16 66 01 36.
+                </a>
             </p>
         </div>
         <div class="col-span-8 flex flex-col gap-8 md:flex-row md:col-span-5 lg:col-span-4">

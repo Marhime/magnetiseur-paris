@@ -17,14 +17,16 @@ const timelineSettings = {
 
 function init() {
     let isNavVisible = true;
-    let prevScrollPos = window.pageYOffset + 200;
+    let prevScrollPos = window.scrollY;
     const navElement = document.querySelector("[data-navigation] header");
     if (navElement) {
         window.onscroll = function () {
-            let currentScrollPos = window.pageYOffset + 200;
-
-            if (prevScrollPos > currentScrollPos && !isNavVisible) {
-                // Scroll vers le haut
+            let currentScrollPos = window.scrollY;
+            if (
+                currentScrollPos === 0 ||
+                (prevScrollPos > currentScrollPos && !isNavVisible)
+            ) {
+                // Scroll en haut de la page ou scroll vers le haut
                 navElement.classList.remove("-translate-y-full");
                 navElement.classList.add("translate-y-0");
                 isNavVisible = true;
