@@ -26,7 +26,7 @@ function init() {
                 currentScrollPos === 0 ||
                 (prevScrollPos > currentScrollPos && !isNavVisible)
             ) {
-                // Scroll en haut de la page ou scroll vers le haut
+                // Scroll en haut de la page ou scroll vers le haut || nav non visible
                 navElement.classList.remove("-translate-y-full");
                 navElement.classList.add("translate-y-0");
                 isNavVisible = true;
