@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
-$app->usePublicPath(base_path('public_html'));
-
 return [
 
     /*
